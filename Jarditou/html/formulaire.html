@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--referencement de la langue du site-->
+<html lang="fr">
+	<!--début de head-->
+	<head>
+		<!-- lien boostrap-->
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		
+		<!--meta de compréhension symbole-->
+		<meta charset="utf-8" />
+		<!--meta d'hadaptation de reduction taille de pages-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!--titre de page-->
+		<title>Jarditou</title>
+		<!--fin de head-->
+	</head>
+
+
+
+
+	<!--debut de mon body-->
+	<body class="container-fluid p-0">
+		<!--tete de pages-->
+		<header class="header">
+			<!--image du logo-->
+			<figure class="row">
+				<div class="col-4">
+					<img src="image/jarditou_logo.jpg" alt="logo de jarditou" title="logo jarditou" class="img-fluid" style="width: 100%">
+				</div>
+			<div class="col-8 text-center m-auto">
+				<span class="h1">La qualité depuis 70ans</span>
+			</div>
+		</figure>
+			
+		</header>
+		<?php
+		include()
+		?>
+ <!--debut prog formulaire-->
+ 		<div class="row p-4">
+ 			<div class="col-3 hiden-xs ">
+ 				</div>
+ 			
+	 		
+				<form action="http://bienvu.net/script.php" method="get"> 
+			 
+			   			 
+					
+					<fieldset>
+					 <legend>Coordonnées</legend>
+					 <div class="row">
+			   			<div class="col-2">
+			   				<P>Nom*:</P>
+			   			</div>
+			   				<div class="col-3">
+			   					<input type="text" name="nom" id="nom" required=""> 
+			   					<span id="aideNom"><span/>
+			   				</div>
+			   			</div>
+			   				<div class="row">
+			   			<div class="col-2">
+			   				<p>Prenom*:</p>
+			   			</div>
+			   				<div class="col-3">
+			   					<input type="text" name="prenom" id="Prenom" required="">
+			   					<span id="aidePrenom"><span/>
+			   				</div>
+			   			</div>	
+			   			<div class="row">
+				   			<div class="col-2">
+				   				<p>Sexe*:</p>
+				   			</div>
+							<div class="col-3 form-inline ">
+								<input type="radio" id="choix1" name="genre" value="Homme" required="">
+							<label for="choix1">masculin</label> 
+							   
+							<input type="radio" id="choix2" name="genre" value="femme">
+							<label for="choix2">féminin</label>	
+							<span id="aideGenre"></span>
+							</div>			  
+						</div>
+						<div class="row">	
+						<div class="col-2">
+							<p>Date de naissance*: </p>
+						</div>
+							<div class="col-3">
+								<input type="date" name="ddn" max="2019-10-02" min="1900-01-01" id="date" required>
+								<span id="aideDate"><span/>
+							</div>
+						</div>
+							<div class="row">
+						<div class="col-2">
+							<p>Code postal:</p>
+						</div>
+							<div class="col-3">
+								<input type="text"  name="code postal" id="codePostal">
+								<span id="aideCodePostal"><span/>
+							</div>
+						</div>
+							<div class="row">
+						<div class="col-2">
+							<p>Adresse:</p>
+						</div>
+							<div class="col-3">
+								<input type="text"  name="adresse" id="Adresse" >
+								<span id="aideAdresse"><span/>
+							</div>
+						</div>
+							<div class="row">
+						<div class="col-2">
+							<p>Ville:</p>
+						</div>
+							<div class="col-3">
+								<input type="text"  name="ville" id="Ville">
+								<span id="aideVille"></span>
+							</div>
+						</div>
+							<div class="row">								
+					 	<div class="col-2">
+					 		<p>Email*:</p>
+					 	</div> 
+					 		<div class="col-3">
+					 			<input type="email" name="email" id="Email" required>
+					 			<span id="aideEmail"><span/>
+					 		</div>
+					 	</div>
+				
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Votre demande</legend>
+							<p>
+								Sujet:
+								<select name="couleur"> 
+				    			<option>Mes comande</option>
+				    			<option>Reclamation</option>
+				    			<option>Aides</option>
+								</select>
+							</p>
+						<p>Vos comentaire:<br><textarea name="commentaire" rows="10" cols="50"></textarea>
+					</fieldset>
+					<p><input type="checkbox" name="validation" value="validation" id="traitement" required="checked"> J'accepte le traitements informatique de mes données</p>
+					<span id="aideTaitement"></span>
+					<p><input type="submit" value="Envoyer" id="bouton">	<input type="reset" value="annuler"></p>
+				</form>
+			 	</div>
+			<div class="col-3 hiden-xs">
+ 				</div>
+		</div>	
+	<!--debut footer/bas de page-->
+			<footer  id="navbar" class="navbar navbar-expand-lg bg-dark navbar-dark">
+			    <!-- Toggler/collapsibe Button -->
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			    <span class="navbar-toggler-icon"></span>
+			    </button>
+			 
+			    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+			        <ul class="navbar-nav">
+			            <li class="nav-item">
+			                <a class="nav-link" href="#accueil">Mention légales</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="tableau.html">Horaire</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="contact.html">Plan du site</a>
+			            </li>
+			        </ul>
+			    </div>
+			    <!--fin de footer/bas de page--> 
+		</footer>
+
+
+
+
+
+
+		 <!--lien necessaire a boostrap-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<!-- fin body-->
+		<script src="js/eval_formulaire.js"></script>
+	</body>
+</html>		

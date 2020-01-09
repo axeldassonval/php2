@@ -1,0 +1,92 @@
+/*organisation de la page*/
+.body
+{
+	display: flex;
+	flex-direction: column;
+}
+.figure1
+{
+	display: flex;
+	justify-content: flex-start;
+}
+.slogan
+{
+	align-self: center;
+}
+/*nav et mention legale*/
+.navigation ul, .footer ul
+{
+	list-style-type: none;
+	display: flex;
+
+}
+.section
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+/*apparence*/
+/*app general*/
+
+*
+{
+	margin: 0px;
+	font-family: "Comic Sans MS","Arial";
+	font-size: 1em;
+}
+a:link,a:visited
+{
+	color: #ffff
+}
+/*fin app general*/
+.logo
+{
+	width: 30%;
+	height:auto;
+}
+.slogan
+{
+	font-size: 1.5em;
+	font-family: bold, "Comic Sans MS","Arial";
+
+}
+.navigation li, .footer li
+{
+    margin-right: 15px;
+}
+.navigation, .footer
+{
+	background-color: black;
+	padding:1em;
+}
+.promo, .figure2
+{
+	margin:0px;
+	width: 100%;
+	height: auto;
+}
+.article
+{
+	width: 70%;
+	height: auto;
+}
+.colone
+{
+	width: 30%;
+	height: auto;
+	background-color: rgba(185,185,185,0.5);
+}
+h1
+{
+	font-size: 2em;
+}
+h2
+{
+	font-size: 1.5em
+}
+
+body
+{
+	background: url(image/lumiere.jpg);
+}

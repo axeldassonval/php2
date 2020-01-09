@@ -1,0 +1,62 @@
+body {
+  background: no-repeat url("../images/background/background_village.png") fixed;
+  background-size: cover;
+}
+
+#bodyCentre {
+  background: #ffffff;
+  margin: 0px;
+}
+
+#navBarre {
+  background: no-repeat url("../images/header/3_bandes.png");
+  padding: 0px;
+  margin: 0px;
+}
+
+#navbar {
+  position: absolute;
+  right: 3rem;
+}
+
+#navbar2 {
+  position: absolute;
+  right: 3rem;
+  top: 3.5rem;
+}
+
+#navbar3 {
+  position: absolute;
+  right: 3rem;
+  top: 6.7rem;
+}
+
+#image_entete {
+  padding: 0px;
+}
+
+#imagePromo {
+  padding: 0px;
+  margin: 0px;
+}
+
+#promoGuitare {
+  padding: 0px;
+  height: auto;
+  max-height: 30rem;
+  width: auto;
+}
+
+#banniereLivraison {
+  padding: 0px;
+  height: auto;
+  max-height: 28rem;
+  width: auto;
+}
+
+#banderolMilieu {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=principal.css.map */
