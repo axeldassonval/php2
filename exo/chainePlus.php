@@ -27,7 +27,7 @@
 
 }*/
 class complexe{
-	private $z1 = 3+1;
+	private $z1= 3+1;
 	private $z2= 1+2;
 	
 	function decoupe(){
@@ -35,19 +35,39 @@ class complexe{
 		$b=substr($z1,2,1);
 		$x=substr($z2,0,1);
 		$y=substr($z2,2,1);
-		return $this->$a,$b,$x,$y;
+		$array=array($a,$b,$x,$y);
+		return $this->$array;
 	}
 
 	function addition(){
-		decoupe($z1,$z2)
-		$Add1 =(a+x);
-		$Add2 =(b+y);
-		$addtt="$add1+$add2*I"
-		return $addtt;
+		$this->decoupe();
+		$calcul1 =($a+$x);
+		$calcul2 =($b+$y);
+		$calculTt=$calcul1."+".$calcul2."*I";
+		return $this->$calculTt;
 	}
-	function soustraction (){}
-	function produit (){}
-	function division (){}
+	function soustraction(){
+		$this->decoupe();
+		$calcul1 =($a-$x);
+		$calcul2 =($b-$y);
+		$calculTt=$calcul1."-".$calcul2."*I";
+		return $this->$calculTt;
+	}
+	function produit(){
+		$this->decoupe();
+		$calcul1 =($a*$x)-($b*$y);
+		$calcul2 =($x*$b+$a*$y);
+		$calculTt=$calcul1."+".$calcul2."*I";
+		return $this->$calculTt;
+	}
+	function division(){
+		$this->decoupe();
+		$calcul1 =($a*$x+$b*$y)/(($x*$x)+($y*$y));
+		$calcul2 =($b*$x-$a*$y)/(($x*$x)+($y*$y));
+		$calculTt=$calcul1."-".$calcul2."*I";
+		return $this->$calculTt;
+
+	}
 
 }
 
