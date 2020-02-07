@@ -41,7 +41,7 @@ if(isset($_SESSION["utilisateur"]) && $_SESSION["utilisateur"]->role == "admin")
 		<div class="row text-center">	
 			<div class="col-12 text-center">
 			<?php 
-			echo "<img src = \"image/$produit->pro_id.$produit->pro_photo\"alt='equipement_jarditou' title='equipement_jarditou'  width= \"auto\" height= \"auto\" class=\"img-responsive center-block\">";
+			echo "<img src = \"asset/image/$produit->pro_id.$produit->pro_photo\"alt='equipement_jarditou' title='equipement_jarditou'  width= \"auto\" height= \"auto\" class=\"img-responsive center-block\">";
 			?>
 			</div>
 			<div class="col-12"><br></div>
